@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+apscheduler
+requests
+pydantic
+fastapi_opentracing
+
