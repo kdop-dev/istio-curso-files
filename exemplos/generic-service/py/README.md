@@ -33,12 +33,6 @@ docker run -d --rm \
 --name backend \
 kdop/generic-service:0.0.5
 
-docker run --rm \
---hostname backend \
---network my-net \
---name backend \
-kdop/generic-service:0.0.5
-
 # front-end
 docker run -d --rm \
     --network my-net \
