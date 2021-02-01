@@ -35,7 +35,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -70,7 +70,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -105,7 +105,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -142,7 +142,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -179,7 +179,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -214,7 +214,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -249,7 +249,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -284,7 +284,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
@@ -319,7 +319,7 @@ spec:
         resources:
           requests:
             memory: 80Mi
-            cpu: 50m
+            cpu: 85m
           limits:
             memory: 96Mi
             cpu: 100m
