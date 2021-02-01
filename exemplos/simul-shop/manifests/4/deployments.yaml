@@ -32,13 +32,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -67,13 +60,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -102,13 +88,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -139,13 +118,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -174,13 +146,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -211,13 +176,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -246,13 +204,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -283,13 +234,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -318,13 +262,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -353,13 +290,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -390,13 +320,6 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -425,10 +348,3 @@ spec:
             value: "v1"
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            memory: "90Mi"
-            cpu: "50m"
-          limits:
-            memory: "128Mi"
-            cpu: "100m"
