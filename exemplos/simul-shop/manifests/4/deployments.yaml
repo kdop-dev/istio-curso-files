@@ -34,11 +34,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -69,11 +69,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -104,11 +104,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -141,11 +141,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -176,11 +176,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -213,11 +213,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -248,11 +248,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -285,11 +285,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -320,11 +320,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -355,11 +355,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -392,11 +392,11 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -427,8 +427,8 @@ spec:
         - containerPort: 8080
         resources:
           requests:
-            memory: 90Mi
-            cpu: 100m
+            memory: "90Mi"
+            cpu: "100m"
           limits:
-            memory: 128Mi
-            cpu: 100m
+            memory: "128Mi"
+            cpu: "100m"
