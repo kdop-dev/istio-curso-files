@@ -9,7 +9,7 @@ while true
 do
 curl -v -H "Host: www.simul-shop.com" \
     --resolve "www.simul-shop.com:$SECURE_INGRESS_PORT:$INGRESS_HOST" \
-    --cacert exemplos/simul-shop/certs/all.simul-shop.com.crt "https://www.simul-shop.com:$SECURE_INGRESS_PORT/s"
+    --cacert assets/exemplos/simul-shop/certs/all.simul-shop.com.crt "https://www.simul-shop.com:$SECURE_INGRESS_PORT/s"
 echo
 sleep 1
 done
@@ -19,7 +19,7 @@ done
 # do
 # curl -v -H "Host: simul-shop.com" \
 #     --resolve "simul-shop.com:$SECURE_INGRESS_PORT:$INGRESS_HOST" \
-#     --cacert exemplos/simul-shop/certs/all.simul-shop.com.crt "https://simul-shop.com:$SECURE_INGRESS_PORT/s"
+#     --cacert assets/exemplos/simul-shop/certs/all.simul-shop.com.crt "https://simul-shop.com:$SECURE_INGRESS_PORT/s"
 # echo
 # sleep 1
 # done
