@@ -1,0 +1,289 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-end-v1
+spec:
+  selector:
+    matchLabels:
+      app: front-end
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: front-end
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: front-end
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: SCHED_CALL_URL_LST
+            value: "http://front-end:8000/s"
+          - name: SCHED_CALL_INTERVAL
+            value: "10"
+          - name: SPLIT_CALL_URL_LST
+            value: "http://login:8000/,http://catalogue:8000/,http://orders:8000/s"
+          - name: APP
+            value: "front-end"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login
+spec:
+  selector:
+    matchLabels:
+      app: login
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: login
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: login
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "login"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalogue
+spec:
+  selector:
+    matchLabels:
+      app: catalogue
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: catalogue
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: catalogue
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "catalogue"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orders
+spec:
+  selector:
+    matchLabels:
+      app: orders
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: orders
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: orders
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: SPLIT_CALL_URL_LST
+            value: "http://shipping:8000/,http://cart:8000/,http://payment:8000/,http://accounts:8000/"
+          - name: APP
+            value: "orders"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shipping
+spec:
+  selector:
+    matchLabels:
+      app: shipping
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: shipping
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: shipping
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "shipping"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cart
+spec:
+  selector:
+    matchLabels:
+      app: cart
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: cart
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: cart
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "cart"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment
+spec:
+  selector:
+    matchLabels:
+      app: payment
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: payment
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: payment
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "payment"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accounts
+spec:
+  selector:
+    matchLabels:
+      app: accounts
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: accounts
+        version: v1
+    spec:
+      terminationGracePeriodSeconds: 5
+      containers:
+      - name: accounts
+        image: kdop/generic-service:0.0.5
+        imagePullPolicy: Always
+        env:
+          - name: APP
+            value: "accounts"
+          - name: VERSION
+            value: "v1"
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: 80Mi
+            cpu: 50m
+          limits:
+            memory: 96Mi
+            cpu: 100m
+
